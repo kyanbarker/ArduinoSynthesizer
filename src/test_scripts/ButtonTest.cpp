@@ -1,6 +1,6 @@
 #include "ButtonTest.h"
 
-void ButtonTest::testSetup()
+void ButtonTest::setup()
 {
   // Setup all buttons with internal pull-up
   for (int i = 0; i < NUM_BUTTONS; i++)
@@ -12,7 +12,7 @@ void ButtonTest::testSetup()
   Serial.println("Press buttons 0-4 and watch for console output");
 }
 
-void ButtonTest::testLoop()
+void ButtonTest::loop()
 {
   // Check each button
   for (int i = 0; i < NUM_BUTTONS; i++)

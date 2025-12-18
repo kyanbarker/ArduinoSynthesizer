@@ -1,6 +1,6 @@
 #include "SpeakerTest.h"
 
-void SpeakerTest::testSetup()
+void SpeakerTest::setup()
 {
   pinMode(SPEAKER1, OUTPUT);
   pinMode(SPEAKER2, OUTPUT);
@@ -36,7 +36,7 @@ void SpeakerTest::testSetup()
   testComplete = true;
 }
 
-void SpeakerTest::testLoop()
+void SpeakerTest::loop()
 {
   // Do nothing after test completes
   if (testComplete)

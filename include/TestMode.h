@@ -6,8 +6,8 @@
 // Interface for test modes
 class TestMode {
 public:
-  virtual void testSetup() = 0;   // Called once at start
-  virtual void testLoop() = 0;    // Called repeatedly
+  virtual void setup() = 0;   // Called once at start
+  virtual void loop() = 0;    // Called repeatedly
   virtual ~TestMode() {}           // Virtual destructor
 };
 

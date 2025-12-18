@@ -18,8 +18,8 @@ private:
   bool testComplete = false;
 
 public:
-  void testSetup() override;
-  void testLoop() override;
+  void setup() override;
+  void loop() override;
 };
 
 #endif

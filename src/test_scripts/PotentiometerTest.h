@@ -11,8 +11,8 @@ private:
   static const int POT2 = A1;
 
 public:
-  void testSetup() override;
-  void testLoop() override;
+  void setup() override;
+  void loop() override;
 };
 
 #endif

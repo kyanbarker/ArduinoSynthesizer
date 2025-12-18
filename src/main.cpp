@@ -18,10 +18,10 @@ void setup()
   Serial.begin(9600);
   delay(1000); // Give serial time to initialize
 
-  activeTest.testSetup();
+  activeTest.setup();
 }
 
 void loop()
 {
-  activeTest.testLoop();
+  activeTest.loop();
 }

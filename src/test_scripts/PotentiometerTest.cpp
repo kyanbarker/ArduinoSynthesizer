@@ -1,6 +1,6 @@
 #include "PotentiometerTest.h"
 
-void PotentiometerTest::testSetup()
+void PotentiometerTest::setup()
 {
   pinMode(POT1, INPUT);
   pinMode(POT2, INPUT);
@@ -9,7 +9,7 @@ void PotentiometerTest::testSetup()
   Serial.println("Turn the potentiometers and watch the values change");
 }
 
-void PotentiometerTest::testLoop()
+void PotentiometerTest::loop()
 {
   // Read both potentiometers (returns 0-1023)
   int pot1Value = analogRead(POT1);

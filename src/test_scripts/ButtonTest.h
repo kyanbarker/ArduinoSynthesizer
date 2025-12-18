@@ -12,8 +12,8 @@ private:
   int lastButtonState[NUM_BUTTONS] = {HIGH, HIGH, HIGH, HIGH, HIGH};
 
 public:
-  void testSetup() override;
-  void testLoop() override;
+  void setup() override;
+  void loop() override;
 };
 
 #endif
