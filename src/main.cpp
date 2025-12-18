@@ -1,21 +1,27 @@
 #include <Arduino.h>
+#include "test_scripts/SpeakerTest.h"
+#include "test_scripts/ButtonTest.h"
+#include "test_scripts/PotentiometerTest.h"
 
-// put function declarations here:
-int myFunction(int, int);
+// ============================================
+// SELECT WHICH TEST TO RUN BY UNCOMMENTING ONE
+// ============================================
+
+// SpeakerTest activeTest;
+// ButtonTest activeTest;
+PotentiometerTest activeTest;
+
+// ============================================
 
 void setup()
 {
-  // put your setup code here, to run once:
-  int result = myFunction(2, 3);
+  Serial.begin(9600);
+  delay(1000); // Give serial time to initialize
+
+  activeTest.testSetup();
 }
 
 void loop()
 {
-  // put your main code here, to run repeatedly:
-}
-
-// put function definitions here:
-int myFunction(int x, int y)
-{
-  return x + y;
+  activeTest.testLoop();
 }
