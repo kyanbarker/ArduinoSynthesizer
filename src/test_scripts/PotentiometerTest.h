@@ -4,7 +4,8 @@
 #include <Arduino.h>
 #include "TestMode.h"
 
-class PotentiometerTest : public TestMode {
+class PotentiometerTest : public TestMode
+{
 private:
   static const int POT1 = A0;
   static const int POT2 = A1;

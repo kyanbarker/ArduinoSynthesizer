@@ -4,16 +4,17 @@
 #include <Arduino.h>
 #include "TestMode.h"
 
-class SpeakerTest : public TestMode {
+class SpeakerTest : public TestMode
+{
 private:
   static const int SPEAKER1 = 2;
   static const int SPEAKER2 = 3;
-  
+
   // Note frequencies (Hz)
   static constexpr float NOTE_C3 = 130.81;
   static constexpr float NOTE_A4 = 440.00;
   static constexpr float NOTE_G5 = 783.99;
-  
+
   bool testComplete = false;
 
 public:
